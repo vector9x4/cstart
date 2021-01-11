@@ -17,3 +17,4 @@ int main(void)
 	{
 		printf("X의 값이 y보다 작거나 같습니다.");
 	}
+}
