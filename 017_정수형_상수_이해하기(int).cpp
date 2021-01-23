@@ -1,20 +1,23 @@
 #include <stdio.h>
 
-#define		HUNDRED_THOUSAND	100000	// Á¤¼öÇü »ó¼ö HUNDRED_THOUSAND´Â ÇÁ·Î±×·¥ÀÌ Á¾·áµÉ ¶§±îÁö 100000ÀÌ¶ó´Â °ªÀ» °¡Áö¸ç, ÀÌ °ªÀº ¹Ù²ð ¼ö ¾ø´Ù.
+#define		HUNDRED_THOUSAND	100000	// ì •ìˆ˜í˜• ìƒìˆ˜ HUNDRED_THOUSANDëŠ” í”„ë¡œê·¸ëž¨ì´ ì¢…ë£Œë  ë•Œê¹Œì§€ 100000ì´ë¼ëŠ” ê°’ì„ ê°€ì§€ë©°, ì´ ê°’ì€ ë°”ë€” ìˆ˜ ì—†ë‹¤.
 
-const int j = 200000;	// Á¤¼öÇü »ó¼ö j´Â ÇÁ·Î±×·¥ÀÌ Á¾·áµÉ ‹š±îÁö 200000ÀÌ¶ó´Â °ªÀ» °®°í ÀÖ½À´Ï´Ù. jÀÇ °ª ¶ÇÇÑ ±× ¾î¶² ÀÌÀ¯¿¡ ÀÇÇØ¼­µµ º¯°æµÉ ¼ö ¾ø½À´Ï´Ù.
+const int j = 200000;	// ì •ìˆ˜í˜• ìƒìˆ˜ jëŠ” í”„ë¡œê·¸ëž¨ì´ ì¢…ë£Œë  Â‹Âšê¹Œì§€ 200000ì´ë¼ëŠ” ê°’ì„ ê°–ê³  ìžˆìŠµë‹ˆë‹¤. jì˜ ê°’ ë˜í•œ ê·¸ ì–´ë–¤ ì´ìœ ì— ì˜í•´ì„œë„ ë³€ê²½ë  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.
 
 main()
 {
-	HUNDRED_THOUSAND = 100000;	// ¿¡·¯ ¹ß»ý : ¸ðµç »ó¼ö¿¡´Â °ªÀ» ´ëÀÔÇÒ ¼ö ¾ø´Ù.
-	j = 200000;	// ¿¡·¯ ¹ß»ý : 9¹øÂ° ÁÙ°ú µ¿ÀÏÇÑ ¿¡·¯ ¹ß»ý. 9, 10¹øÂ° ÁÙÀ» ÁÖ¼® Ã³¸®ÇÏ¸é ÄÄÆÄÀÏÀÌ °¡´ÉÇÏ´Ù. 
+	HUNDRED_THOUSAND = 100000;	// ì—ëŸ¬ ë°œìƒ : ëª¨ë“  ìƒìˆ˜ì—ëŠ” ê°’ì„ ëŒ€ìž…í•  ìˆ˜ ì—†ë‹¤.
+	j = 200000;	// ì—ëŸ¬ ë°œìƒ : 9ë²ˆì§¸ ì¤„ê³¼ ë™ì¼í•œ ì—ëŸ¬ ë°œìƒ. 9, 10ë²ˆì§¸ ì¤„ì„ ì£¼ì„ ì²˜ë¦¬í•˜ë©´ ì»´íŒŒì¼ì´ ê°€ëŠ¥í•˜ë‹¤. 
 
-	printf("Á¤¼öÇü »ó¼ö HUNDRED_THOUDANDÀÇ °ªÀº %d\n", HUNDRED_THOUSAND);
-	printf("Á¤¼öÇü »ó¼ö jÀÇ °ªÀº %d\n", j);
+	printf("ì •ìˆ˜í˜• ìƒìˆ˜ HUNDRED_THOUDANDì˜ ê°’ì€ %d\n", HUNDRED_THOUSAND);
+	printf("ì •ìˆ˜í˜• ìƒìˆ˜ jì˜ ê°’ì€ %d\n", j);
 }
 /*
-- Á¤¼öÇü »ó¼ö´Â Á¤¼öÇü º¯¼ö¸¦ ´ë½ÅÇÏ¿© »ç¿ëµÇ´Â °ªÀÌ¸ç, #define ¹®¿¡ ÀÇÇØ ¼±¾ðÇÏ´Â Á¤¼öÇü »ó¼ö´Â ¹®ÀÚÇü »ó¼ö¸¦ ¼±¾ðÇÏ´Â ¹æ¹ý°ú °°Àº °ÍÀ» º¼ ¼ö ÀÖ´Ù.
-- Á¤¼öÇü »ó¼ö ¿ª½Ã µÎ °¡Áö ¹æ¹ýÀ¸·Î Á¤ÀÇÇÒ ¼ö ÀÖ´Âµ¥, #define ¹®°ú const intÇüÀ¸·Î ¼±¾ðÇÏ´Â °ÍÀÌ´Ù.
-- define ¹®¿¡ Á¤ÀÇµÇ¸é Á¤¼öÇüÀÎÁö Á¤È®ÇÑ ±¸º°ÀÌ ¾øÁö¸¸, const ¹®¿¡ Á¤ÀÇµÇ¸é Á¤¼öÇü »ó¼öÀÓÀÌ ±¸º°µÈ´Ù.
-- ÀÏ¹ÝÀûÀ¸·Î´Â #define ¹®ÀÌ ¸¹ÀÌ »ç¿ëµÇ¸ç, º¯¼öÀÇ ÇüÀÌ Æ¯º°È÷ Áß¿äÇÒ °æ¿ì const intÇüÀ» »ç¿ëÇÑ´Ù.
+- ì •ìˆ˜í˜• ìƒìˆ˜ëŠ” ì •ìˆ˜í˜• ë³€ìˆ˜ë¥¼ ëŒ€ì‹ í•˜ì—¬ ì‚¬ìš©ë˜ëŠ” ê°’ì´ë©°, #define ë¬¸ì— ì˜í•´ ì„ ì–¸í•˜ëŠ” ì •ìˆ˜í˜• ìƒìˆ˜ëŠ” ë¬¸ìží˜• ìƒìˆ˜ë¥¼ ì„ ì–¸í•˜ëŠ” ë°©ë²•ê³¼ ê°™ì€ ê²ƒì„ ë³¼ ìˆ˜ ìžˆë‹¤.
+- ì •ìˆ˜í˜• ìƒìˆ˜ ì—­ì‹œ ë‘ ê°€ì§€ ë°©ë²•ìœ¼ë¡œ ì •ì˜í•  ìˆ˜ ìžˆëŠ”ë°, #define ë¬¸ê³¼ const intí˜•ìœ¼ë¡œ ì„ ì–¸í•˜ëŠ” ê²ƒì´ë‹¤.
+- define ë¬¸ì— ì •ì˜ë˜ë©´ ì •ìˆ˜í˜•ì¸ì§€ ì •í™•í•œ êµ¬ë³„ì´ ì—†ì§€ë§Œ, const ë¬¸ì— ì •ì˜ë˜ë©´ ì •ìˆ˜í˜• ìƒìˆ˜ìž„ì´ êµ¬ë³„ëœë‹¤.
+- ì¼ë°˜ì ìœ¼ë¡œëŠ” #define ë¬¸ì´ ë§Žì´ ì‚¬ìš©ë˜ë©°, ë³€ìˆ˜ì˜ í˜•ì´ íŠ¹ë³„ížˆ ì¤‘ìš”í•  ê²½ìš° const intí˜•ì„ ì‚¬ìš©í•œë‹¤.
+- ì •ìˆ˜í˜• ìƒìˆ˜ë¥¼ ì‚¬ìš©í•  ë•ŒëŠ” ì¼ë°˜ì ìœ¼ë¡œ ì •ìˆ˜ìž„ì„ ë‚˜íƒ€ë‚´ëŠ” L(long) ë˜ëŠ” UL(unsigned long)ì„ ì‚¬ìš©í•˜ê³¤ í•œë‹¤.
+	ex) #define	HUNDRED_THOUSAND 100000L
+	    const int	j=200000UL;
 */
